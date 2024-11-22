@@ -1,0 +1,48 @@
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Custom Button Styles */
+  .custom-button {
+    background-color: #3498db; /* Blue background */
+    color: white;              /* White text */
+    padding: 10px 20px;        /* Padding around the button */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 16px;           /* Font size */
+    font-weight: bold;         /* Bold text */
+    border: none;              /* Remove default border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    cursor: pointer;          /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Hover and Focus States */
+  .custom-button:hover {
+    background-color: #2980b9; /* Darker blue when hovered */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .custom-button:focus {
+    outline: none;             /* Remove default focus outline */
+    box-shadow: 0 0 0 2px #2980b9; /* Focus shadow effect */
+  }
+  
+  /* Active state when button is clicked */
+  .custom-button:active {
+    transform: translateY(1px); /* Slight push-down effect */
+  }
+  
+

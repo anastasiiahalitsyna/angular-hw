@@ -1,0 +1,83 @@
+/* Custom container for overall alignment */
+.custom-container {
+    background-color: #f3f4f6; /* Light gray background */
+    min-height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align to the top */
+    padding: 1rem; /* Reduced padding for more compact spacing */
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    width: 100%;
+    max-width: 30rem; /* Smaller max-width for compactness */
+    background-color: #ffffff;
+    padding: 0.75rem; /* Reduced padding */
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Reduced margin below search bar */
+  }
+  
+  /* Input field inside search bar */
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Button inside search bar */
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Weather cards container (grid layout) */
+  .weather-cards-container {
+    width: 100%;
+    max-width: 32rem; /* Adjusted max-width for a more compact look */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two cards per row */
+    gap: 1rem; /* Reduced gap between cards */
+    padding: 1rem; /* Reduced padding */
+    justify-content: center;
+  }
+  
+  /* Style for each weather card */
+  .weather-card {
+    background-color: #ffffff;
+    padding: 1rem; /* Reduced padding for compactness */
+    border-radius: 0.5rem; /* Smaller rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 0.9rem; /* Smaller text */
+  }
+  
+  /* Hover effect for weather cards */
+  .weather-card:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Remove button for weather card */
+  .weather-card .remove-btn {
+    color: #e53e3e; /* Red color for 'Remove' */
+    font-size: 0.8rem; /* Smaller text for remove button */
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,9 @@
+<div class="custom-container">
+  <app-search-bar (refreshDashboard)="refreshDashboard()" class="search-bar"></app-search-bar>
+
+  <div class="weather-cards-container">
+    @for (detail of weatherDetails; track detail) {
+      <app-weather-card (refreshDashboard)="refreshDashboard()" [weatherDetail]="detail" class="weather-card"></app-weather-card>
+    }
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="bg-white p-6 rounded-lg shadow-md flex justify-between items-center space-x-4" style="margin: 10px;">
+
+    <div class="flex items-center space-x-4">
+        <div class="bg-blue-100 p-3 rounded-full">
+            <svg class="w-10 h-10 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                    d="M6.995 12c0-3.038 2.427-5.495 5.496-5.495 2.191 0 4.105 1.274 4.98 3.131 1.407-.372 2.995.241 3.82 1.577a3.495 3.495 0 01-2.829 5.322H6.995a3.495 3.495 0 01-3.5-3.5 3.495 3.495 0 013.5-3.5zm11.005-4c-.828 0-1.5-.672-1.5-1.5S17.172 5 18 5s1.5.672 1.5 1.5S18.828 8 18 8zm-9-4c-.828 0-1.5-.672-1.5-1.5S8.172 1 9 1s1.5.672 1.5 1.5S9.828 4 9 4z" />
+            </svg>
+        </div>
+
+        <!-- City and Weather Details -->
+        <div>
+            <h3 class="text-lg font-semibold text-gray-800">{{weatherDetail.city}}</h3>
+            <p class="text-sm text-gray-500">{{weatherDetail.description}}, {{weatherDetail.temprature}}°C</p>
+        </div>
+    </div>
+    <!-- Remove Button -->
+    <button (click)="removeCard(weatherDetail.city)" class="text-red-500 hover:text-red-700 font-medium px-3 py-2 rounded-lg">
+        Remove
+    </button>
+</div>
