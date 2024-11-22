@@ -34,3 +34,10 @@
    - Use this repo as a starting point for your journey
    - Host the code in a public repository (e.g., GitHub) and provide the link.
    - Include a README file with setup instructions and details on any API keys used.
+
+## Local setup:
+1. Replace the fake *APPID* used in the function *findWeatherDataByCity* of *angular-hw\src\app\weather-data.service.ts* service with a valid API key from OpenWeather APIs.
+2. To run the app locally, use: *ng serve*
+3. To run the unit tests, use *ng test*.
+
+
